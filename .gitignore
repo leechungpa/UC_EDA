@@ -8,6 +8,13 @@ data/transport/
 
 
 #######
+# mac
+#######
+
+.DS_Store
+
+
+#######
 # python
 #######
 
