@@ -1,0 +1,768 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:36.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:36.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:48.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:48.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:14.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:60.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:60.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:48.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:48.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Times,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Times,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:11.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:16.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:16.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:16.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:16.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:16.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:16.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:16.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:16.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:16.2px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:16.2px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:16.2px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:16.2px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_088{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_088{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Arial,serif;font-size:12.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:20.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:20.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:20.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:20.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Arial,serif;font-size:20.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Arial,serif;font-size:20.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Arial,serif;font-size:20.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Arial,serif;font-size:20.0px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_050{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_051{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_051{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_052{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_052{font-family:Arial,serif;font-size:12.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_053{font-family:"Cambria Math",serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_053{font-family:"Cambria Math",serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_054{font-family:"Cambria Math",serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_054{font-family:"Cambria Math",serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_055{font-family:Arial,serif;font-size:10.6px;color:rgb(121,121,121);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_055{font-family:Arial,serif;font-size:10.6px;color:rgb(121,121,121);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_056{font-family:Arial,serif;font-size:10.6px;color:rgb(121,121,121);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_056{font-family:Arial,serif;font-size:10.6px;color:rgb(121,121,121);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_057{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_057{font-family:Arial,serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_058{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_058{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_059{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_059{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_060{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_060{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_061{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_061{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_062{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_062{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:48.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:48.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_063{font-family:Arial,serif;font-size:30.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_063{font-family:Arial,serif;font-size:30.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_064{font-family:Arial,serif;font-size:30.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_064{font-family:Arial,serif;font-size:30.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_065{font-family:Arial,serif;font-size:30.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_065{font-family:Arial,serif;font-size:30.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_066{font-family:Arial,serif;font-size:30.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_066{font-family:Arial,serif;font-size:30.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_089{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_089{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_090{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_090{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_091{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_091{font-family:Arial,serif;font-size:14.0px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_068{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_068{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_067{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_067{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_069{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_069{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_070{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_070{font-family:Arial,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_071{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_071{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_072{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_072{font-family:Arial,serif;font-size:24.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:18.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_073{font-family:Arial,serif;font-size:16.2px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_073{font-family:Arial,serif;font-size:16.2px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_074{font-family:Arial,serif;font-size:16.2px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_074{font-family:Arial,serif;font-size:16.2px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_075{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_075{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_076{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_076{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_079{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_079{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_080{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_080{font-family:Arial,serif;font-size:11.1px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_077{font-family:Arial,serif;font-size:11.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_077{font-family:Arial,serif;font-size:11.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_078{font-family:Arial,serif;font-size:11.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_078{font-family:Arial,serif;font-size:11.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_081{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_081{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_082{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_082{font-family:Arial,serif;font-size:18.1px;color:rgb(245,245,245);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_083{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_083{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_084{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_084{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_087{font-family:Arial,serif;font-size:72.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_087{font-family:Arial,serif;font-size:72.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_085{font-family:Arial,serif;font-size:10.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_085{font-family:Arial,serif;font-size:10.1px;color:rgb(84,84,84);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_086{font-family:Arial,serif;font-size:10.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_086{font-family:Arial,serif;font-size:10.1px;color:rgb(84,84,84);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=405></div>
+<div style="position:absolute;left:211.30px;top:168.29px" class="cls_002"><span class="cls_002">EDA on US Accidents</span></div>
+<div style="position:absolute;left:222.34px;top:216.86px" class="cls_003"><span class="cls_003">Group E: </span><span class="cls_004">김승희</span><span class="cls_003">, </span><span class="cls_004">이재훈</span><span class="cls_003">, </span><span class="cls_004">이준엽</span><span class="cls_003">, </span><span class="cls_004">이청파</span><span class="cls_003">, </span><span class="cls_004">홍석현</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:415px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=405></div>
+<div style="position:absolute;left:395.69px;top:60.34px" class="cls_007"><span class="cls_007">프로젝트 배경 소개</span></div>
+<div style="position:absolute;left:582.05px;top:47.43px" class="cls_009"><span class="cls_009">01</span></div>
+<div style="position:absolute;left:221.21px;top:84.50px" class="cls_003"><span class="cls_003">Dataset </span><span class="cls_004">소개</span><span class="cls_003"> </span><span class="cls_004">및</span><span class="cls_003"> </span><span class="cls_004">설명</span><span class="cls_003">, </span><span class="cls_004">기초</span><span class="cls_003"> </span><span class="cls_004">그래프</span><span class="cls_003"> </span><span class="cls_004">탐색</span><span class="cls_003">, </span><span class="cls_004">탐구</span><span class="cls_003"> </span><span class="cls_004">주제</span><span class="cls_003"> </span><span class="cls_004">설정</span></div>
+<div style="position:absolute;left:395.90px;top:173.76px" class="cls_005"><span class="cls_005">교통량별 사고 분석</span></div>
+<div style="position:absolute;left:290.71px;top:198.27px" class="cls_010"><span class="cls_010">교통량</span><span class="cls_011"> </span><span class="cls_010">데이터</span><span class="cls_011"> </span><span class="cls_010">설명</span><span class="cls_011">, </span><span class="cls_010">기본</span><span class="cls_011"> </span><span class="cls_010">그래프</span><span class="cls_011">, </span><span class="cls_010">주별</span><span class="cls_011"> </span><span class="cls_010">분석</span><span class="cls_011">,</span></div>
+<div style="position:absolute;left:582.05px;top:170.72px" class="cls_009"><span class="cls_009">02</span></div>
+<div style="position:absolute;left:379.54px;top:215.11px" class="cls_004"><span class="cls_004">시계열</span><span class="cls_003"> </span><span class="cls_004">분석</span><span class="cls_003">, </span><span class="cls_004">결론</span><span class="cls_003"> </span><span class="cls_004">및</span><span class="cls_003"> </span><span class="cls_004">한계점</span></div>
+<div style="position:absolute;left:364.46px;top:292.90px" class="cls_006"><span class="cls_006">2</span><span class="cls_005">차</span><span class="cls_006"> </span><span class="cls_005">이상</span><span class="cls_006"> </span><span class="cls_005">연쇄사고</span><span class="cls_006"> </span><span class="cls_005">분석</span></div>
+<div style="position:absolute;left:246.38px;top:317.76px" class="cls_004"><span class="cls_004">연쇄사고</span><span class="cls_003"> Feature </span><span class="cls_004">생성</span><span class="cls_003">, </span><span class="cls_004">연쇄사고분포</span><span class="cls_003"> </span><span class="cls_004">및</span><span class="cls_003"> </span><span class="cls_004">네트워크</span><span class="cls_003">,</span></div>
+<div style="position:absolute;left:582.05px;top:288.60px" class="cls_009"><span class="cls_009">03</span></div>
+<div style="position:absolute;left:283.34px;top:334.54px" class="cls_010"><span class="cls_010">연쇄사고에</span><span class="cls_011"> </span><span class="cls_010">영향을</span><span class="cls_011"> </span><span class="cls_010">주는</span><span class="cls_011"> </span><span class="cls_010">요소</span><span class="cls_011">, </span><span class="cls_010">결론</span><span class="cls_011"> </span><span class="cls_010">및</span><span class="cls_011"> </span><span class="cls_010">한계점</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:830px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=405></div>
+<div style="position:absolute;left:335.52px;top:27.36px" class="cls_014"><span class="cls_014">01</span></div>
+<div style="position:absolute;left:172.44px;top:170.81px" class="cls_012"><span class="cls_012">프로젝트 배경 소개</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1245px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_018"><span class="cls_018">US Accidents Dataset </span><span class="cls_019">소개</span></div>
+<div style="position:absolute;left:157.18px;top:256.46px" class="cls_015"><span class="cls_015">●</span><span class="cls_017">  </span><span class="cls_016">미국</span><span class="cls_017"> 49</span><span class="cls_016">개</span><span class="cls_017"> </span><span class="cls_016">주의</span><span class="cls_017"> </span><span class="cls_016">자동차</span><span class="cls_017"> </span><span class="cls_016">사고</span><span class="cls_017"> </span><span class="cls_016">데이터</span></div>
+<div style="position:absolute;left:157.18px;top:281.69px" class="cls_015"><span class="cls_015">●</span></div>
+<div style="position:absolute;left:182.14px;top:281.69px" class="cls_017"><span class="cls_017">2016</span><span class="cls_016">년</span><span class="cls_017"> 2</span><span class="cls_016">월</span><span class="cls_017"> ~ 2020</span><span class="cls_016">년</span><span class="cls_017"> 6</span><span class="cls_016">월</span><span class="cls_017"> (52</span><span class="cls_016">개월</span><span class="cls_017">)</span></div>
+<div style="position:absolute;left:157.18px;top:306.86px" class="cls_020"><span class="cls_020">●</span><span class="cls_021">  About 3.5 million accidents (</span><span class="cls_022">약</span><span class="cls_021"> 3500</span><span class="cls_022">만건의</span><span class="cls_021"> </span><span class="cls_022">사고</span><span class="cls_021">)</span></div>
+<div style="position:absolute;left:157.18px;top:332.11px" class="cls_015"><span class="cls_015">●</span><span class="cls_017">  Column </span><span class="cls_016">수</span><span class="cls_017">: 49</span><span class="cls_016">개</span><span class="cls_017">, 17 Strings, 13 Bool, 12 Decimal, 7 Others</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1660px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_018"><span class="cls_018">US Accidents Dataset </span><span class="cls_019">설명</span></div>
+<div style="position:absolute;left:155.45px;top:76.32px" class="cls_023"><span class="cls_023">Severity</span></div>
+<div style="position:absolute;left:86.06px;top:99.67px" class="cls_024"><span class="cls_024">Type</span></div>
+<div style="position:absolute;left:154.49px;top:99.67px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:265.22px;top:113.04px" class="cls_027"><span class="cls_027">49</span><span class="cls_028">개</span><span class="cls_027"> </span><span class="cls_028">중</span><span class="cls_027"> 16</span><span class="cls_028">개</span><span class="cls_027"> Column </span><span class="cls_028">사용</span></div>
+<div style="position:absolute;left:154.97px;top:121.54px" class="cls_025"><span class="cls_025">각 사고의</span></div>
+<div style="position:absolute;left:69.24px;top:134.74px" class="cls_024"><span class="cls_024">Description</span></div>
+<div style="position:absolute;left:143.69px;top:134.74px" class="cls_024"><span class="cls_024">Traffic</span><span class="cls_025">에</span><span class="cls_024"> </span><span class="cls_025">미치</span></div>
+<div style="position:absolute;left:144.17px;top:147.92px" class="cls_026"><span class="cls_026">는 심각성</span><span class="cls_023"> 1~4</span></div>
+<div style="position:absolute;left:146.83px;top:184.15px" class="cls_024"><span class="cls_024">Start_Time</span></div>
+<div style="position:absolute;left:231.31px;top:184.15px" class="cls_024"><span class="cls_024">End_Time</span></div>
+<div style="position:absolute;left:315.31px;top:184.15px" class="cls_024"><span class="cls_024">Start_Lat</span></div>
+<div style="position:absolute;left:395.95px;top:184.15px" class="cls_024"><span class="cls_024">Start_Lng</span></div>
+<div style="position:absolute;left:480.65px;top:184.15px" class="cls_024"><span class="cls_024">Distance</span></div>
+<div style="position:absolute;left:571.13px;top:184.15px" class="cls_024"><span class="cls_024">State</span></div>
+<div style="position:absolute;left:85.37px;top:207.46px" class="cls_024"><span class="cls_024">Type</span></div>
+<div style="position:absolute;left:162.91px;top:207.46px" class="cls_024"><span class="cls_024">Time</span></div>
+<div style="position:absolute;left:244.75px;top:207.46px" class="cls_024"><span class="cls_024">Time</span></div>
+<div style="position:absolute;left:317.47px;top:207.46px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:399.31px;top:207.46px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:481.13px;top:207.46px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:569.69px;top:207.46px" class="cls_024"><span class="cls_024">String</span></div>
+<div style="position:absolute;left:226.03px;top:229.32px" class="cls_025"><span class="cls_025">사고의 영향이</span></div>
+<div style="position:absolute;left:470.33px;top:229.32px" class="cls_025"><span class="cls_025">사고로 인해 영</span></div>
+<div style="position:absolute;left:144.43px;top:235.92px" class="cls_024"><span class="cls_024">Local </span><span class="cls_025">기준</span><span class="cls_024"> </span><span class="cls_025">각</span></div>
+<div style="position:absolute;left:68.54px;top:242.50px" class="cls_023"><span class="cls_023">Description</span></div>
+<div style="position:absolute;left:228.19px;top:242.50px" class="cls_023"><span class="cls_023">dismiss</span><span class="cls_026">되는</span></div>
+<div style="position:absolute;left:306.67px;top:242.50px" class="cls_026"><span class="cls_026">사고 발생 위도</span></div>
+<div style="position:absolute;left:388.49px;top:242.50px" class="cls_026"><span class="cls_026">사고 발생 경도</span></div>
+<div style="position:absolute;left:470.57px;top:242.50px" class="cls_026"><span class="cls_026">향 받은 도로의</span></div>
+<div style="position:absolute;left:563.69px;top:242.50px" class="cls_026"><span class="cls_026">사고난 주</span></div>
+<div style="position:absolute;left:142.99px;top:249.10px" class="cls_026"><span class="cls_026">사고 발생 시간</span></div>
+<div style="position:absolute;left:247.63px;top:255.74px" class="cls_025"><span class="cls_025">시간</span></div>
+<div style="position:absolute;left:493.15px;top:255.74px" class="cls_025"><span class="cls_025">거리</span></div>
+<div style="position:absolute;left:127.06px;top:290.45px" class="cls_023"><span class="cls_023">Temperat</span></div>
+<div style="position:absolute;left:192.84px;top:290.45px" class="cls_023"><span class="cls_023">Wind_Chi</span></div>
+<div style="position:absolute;left:258.86px;top:290.45px" class="cls_023"><span class="cls_023">Humidity</span></div>
+<div style="position:absolute;left:323.69px;top:290.45px" class="cls_023"><span class="cls_023">Pressure(</span></div>
+<div style="position:absolute;left:389.95px;top:290.45px" class="cls_023"><span class="cls_023">Visibility(</span></div>
+<div style="position:absolute;left:455.02px;top:290.45px" class="cls_023"><span class="cls_023">Wind_Dir</span></div>
+<div style="position:absolute;left:521.04px;top:290.45px" class="cls_023"><span class="cls_023">Wind_Sp</span></div>
+<div style="position:absolute;left:584.18px;top:290.45px" class="cls_023"><span class="cls_023">Percipitat</span></div>
+<div style="position:absolute;left:649.73px;top:290.45px" class="cls_023"><span class="cls_023">Weather_</span></div>
+<div style="position:absolute;left:136.66px;top:303.70px" class="cls_024"><span class="cls_024">ure(F)</span></div>
+<div style="position:absolute;left:207.48px;top:303.70px" class="cls_024"><span class="cls_024">ll(F)</span></div>
+<div style="position:absolute;left:273.98px;top:303.70px" class="cls_024"><span class="cls_024">(%)</span></div>
+<div style="position:absolute;left:341.21px;top:303.70px" class="cls_024"><span class="cls_024">in)</span></div>
+<div style="position:absolute;left:404.83px;top:303.70px" class="cls_024"><span class="cls_024">mi)</span></div>
+<div style="position:absolute;left:462.46px;top:303.70px" class="cls_024"><span class="cls_024">ection</span></div>
+<div style="position:absolute;left:518.88px;top:303.70px" class="cls_024"><span class="cls_024">eed(mph)</span></div>
+<div style="position:absolute;left:600.98px;top:303.70px" class="cls_024"><span class="cls_024">ion</span></div>
+<div style="position:absolute;left:649.73px;top:303.70px" class="cls_024"><span class="cls_024">condition</span></div>
+<div style="position:absolute;left:77.59px;top:325.56px" class="cls_024"><span class="cls_024">Type</span></div>
+<div style="position:absolute;left:130.42px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:195.72px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:261.02px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:326.33px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:391.63px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:463.42px;top:325.56px" class="cls_024"><span class="cls_024">String</span></div>
+<div style="position:absolute;left:522.24px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:587.54px;top:325.56px" class="cls_024"><span class="cls_024">Numeric</span></div>
+<div style="position:absolute;left:659.33px;top:325.56px" class="cls_024"><span class="cls_024">String</span></div>
+<div style="position:absolute;left:68.95px;top:347.74px" class="cls_024"><span class="cls_024">Descript</span></div>
+<div style="position:absolute;left:130.90px;top:354.34px" class="cls_025"><span class="cls_025">지역 온도</span></div>
+<div style="position:absolute;left:197.40px;top:354.34px" class="cls_025"><span class="cls_025">냉각효과</span></div>
+<div style="position:absolute;left:273.02px;top:354.34px" class="cls_025"><span class="cls_025">습도</span></div>
+<div style="position:absolute;left:332.81px;top:354.34px" class="cls_025"><span class="cls_025">대기압</span></div>
+<div style="position:absolute;left:393.31px;top:354.34px" class="cls_025"><span class="cls_025">가시거리</span></div>
+<div style="position:absolute;left:468.70px;top:354.34px" class="cls_025"><span class="cls_025">풍향</span></div>
+<div style="position:absolute;left:534.24px;top:354.34px" class="cls_025"><span class="cls_025">풍속</span></div>
+<div style="position:absolute;left:594.26px;top:354.34px" class="cls_025"><span class="cls_025">강수량</span></div>
+<div style="position:absolute;left:653.09px;top:354.34px" class="cls_025"><span class="cls_025">날씨 설명</span></div>
+<div style="position:absolute;left:82.15px;top:360.94px" class="cls_024"><span class="cls_024">ion</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2075px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=405></div>
+<div style="position:absolute;left:194.16px;top:76.54px" class="cls_012"><span class="cls_012">기초 그래프 탐색</span></div>
+<div style="position:absolute;left:356.69px;top:324.70px" class="cls_029"><span class="cls_029">1. </span><span class="cls_030">교통사고의</span><span class="cls_029"> </span><span class="cls_030">심각도와</span><span class="cls_029"> </span><span class="cls_030">상관관계가</span><span class="cls_029"> </span><span class="cls_030">높은</span><span class="cls_029"> </span><span class="cls_030">변수는</span><span class="cls_029">?</span></div>
+<div style="position:absolute;left:361.20px;top:366.17px" class="cls_031"><span class="cls_031">2. </span><span class="cls_032">교통사고</span><span class="cls_031"> </span><span class="cls_032">수</span><span class="cls_031"> </span><span class="cls_032">시계열</span><span class="cls_031"> </span><span class="cls_032">분석</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2490px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_033"><span class="cls_033">Sever</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2905px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=405></div>
+<div style="position:absolute;left:21.34px;top:17.43px" class="cls_034"><span class="cls_034">Severity - Weather Condition</span></div>
+<div style="position:absolute;left:35.40px;top:364.18px" class="cls_035"><span class="cls_035">날씨가</span><span class="cls_036"> </span><span class="cls_035">맑은</span><span class="cls_036"> </span><span class="cls_035">날과</span><span class="cls_036"> </span><span class="cls_035">안</span><span class="cls_036"> </span><span class="cls_035">좋은</span><span class="cls_036"> </span><span class="cls_035">날</span><span class="cls_036"> ( </span><span class="cls_035">안개</span><span class="cls_036">, </span><span class="cls_035">비</span><span class="cls_036">, </span><span class="cls_035">눈</span><span class="cls_036"> </span><span class="cls_035">등</span><span class="cls_036">) </span><span class="cls_035">의</span><span class="cls_036"> </span><span class="cls_035">심각도의</span><span class="cls_036"> </span><span class="cls_035">차이는</span><span class="cls_036"> </span><span class="cls_035">크게</span><span class="cls_036"> </span><span class="cls_035">없었다</span><span class="cls_036">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3320px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_033"><span class="cls_033">Severity - Environmental Condition</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3735px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_037"><span class="cls_037">탐구 주제 설정</span></div>
+<div style="position:absolute;left:21.34px;top:239.16px" class="cls_038"><span class="cls_038">1. </span><span class="cls_039">지역별</span><span class="cls_038">/</span><span class="cls_039">시간별</span><span class="cls_038"> </span><span class="cls_039">교통량</span><span class="cls_038"> </span><span class="cls_039">의</span><span class="cls_038"> </span><span class="cls_039">차이가</span><span class="cls_038"> </span><span class="cls_039">사고수에</span><span class="cls_038"> </span><span class="cls_039">영향이</span><span class="cls_038"> </span><span class="cls_039">있을까</span><span class="cls_038">?</span></div>
+<div style="position:absolute;left:21.34px;top:296.83px" class="cls_029"><span class="cls_029">2. </span><span class="cls_030">유사</span><span class="cls_029"> </span><span class="cls_030">시간대에</span><span class="cls_029">, </span><span class="cls_030">인접한</span><span class="cls_029"> </span><span class="cls_030">위치에서</span><span class="cls_029"> </span><span class="cls_030">많은</span><span class="cls_029"> </span><span class="cls_030">수의</span><span class="cls_029"> </span><span class="cls_030">사고가</span><span class="cls_029"> </span><span class="cls_030">발생한</span><span class="cls_029"> </span><span class="cls_030">것을</span><span class="cls_029"> </span><span class="cls_030">연쇄적인</span><span class="cls_029"> </span><span class="cls_030">사고</span><span class="cls_029"> </span><span class="cls_030">라고</span><span class="cls_029"> </span><span class="cls_030">판단할</span><span class="cls_029"> </span><span class="cls_030">수</span><span class="cls_029"> </span><span class="cls_030">있을까</span><span class="cls_029">?</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4150px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=405></div>
+<div style="position:absolute;left:330.24px;top:27.36px" class="cls_014"><span class="cls_014">02</span></div>
+<div style="position:absolute;left:172.44px;top:170.81px" class="cls_012"><span class="cls_012">교통량별 사고 분석</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4565px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=405></div>
+<div style="position:absolute;left:63.91px;top:33.98px" class="cls_019"><span class="cls_019">교통량의 필요성</span></div>
+<div style="position:absolute;left:121.94px;top:117.96px" class="cls_016"><span class="cls_016">사고건수</span><span class="cls_017">, </span><span class="cls_016">사고로</span><span class="cls_017"> </span><span class="cls_016">인해</span><span class="cls_017"> </span><span class="cls_016">영향을</span><span class="cls_017"> </span><span class="cls_016">받은</span><span class="cls_017"> </span><span class="cls_016">거리</span><span class="cls_017">, </span><span class="cls_016">사고영향시간</span><span class="cls_017">, </span><span class="cls_016">심각도를</span><span class="cls_017"> </span><span class="cls_016">시각화</span><span class="cls_017"> </span><span class="cls_016">하고자</span><span class="cls_017"> </span><span class="cls_016">함</span></div>
+<div style="position:absolute;left:211.03px;top:175.75px" class="cls_088"><span class="cls_088">사고건수</span><span class="cls_016">는</span><span class="cls_017"> </span><span class="cls_016">교통량에</span><span class="cls_017"> </span><span class="cls_016">영향을</span><span class="cls_017"> </span><span class="cls_016">받을</span><span class="cls_017"> </span><span class="cls_016">것이라고</span><span class="cls_017"> </span><span class="cls_016">판단함</span></div>
+<div style="position:absolute;left:230.04px;top:235.13px" class="cls_022"><span class="cls_022">주별 교통량 데이터를 가져와 시각화에 사용</span></div>
+<div style="position:absolute;left:219.00px;top:288.96px" class="cls_016"><span class="cls_016">실제로 교통량과 사고건수에는 상관관계가 보임</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4980px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_037"><span class="cls_037">교통량 데이터</span></div>
+<div style="position:absolute;left:424.03px;top:101.43px" class="cls_040"><span class="cls_040">• </span><span class="cls_041">출처</span><span class="cls_040">: US Department of Transportation Federal</span></div>
+<div style="position:absolute;left:437.47px;top:123.07px" class="cls_042"><span class="cls_042">Highway Administration</span></div>
+<div style="position:absolute;left:424.03px;top:160.54px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">링크</span><span class="cls_042">:</span></div>
+<div style="position:absolute;left:437.47px;top:182.12px" class="cls_040"><span class="cls_040"> </span><A HREF="https://www.fhwa.dot.gov/policyinformation/t/">https://www.fhwa.dot.gov/policyinformation/t</A> </div>
+<div style="position:absolute;left:437.47px;top:203.76px" class="cls_042"><span class="cls_042">ravel_monitoring/tvt.cfm</span></div>
+<div style="position:absolute;left:424.03px;top:241.46px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">날짜</span><span class="cls_042">: 2002</span><span class="cls_043">년</span><span class="cls_042">~2020</span><span class="cls_043">년</span><span class="cls_042"> 5</span><span class="cls_043">월까지</span><span class="cls_042"> </span><span class="cls_043">월별</span><span class="cls_042"> </span><span class="cls_043">데이터</span></div>
+<div style="position:absolute;left:424.03px;top:279.17px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">설명</span><span class="cls_042">: </span><span class="cls_043">미국</span><span class="cls_042"> 5,000</span><span class="cls_043">개의</span><span class="cls_042"> </span><span class="cls_043">교통량</span><span class="cls_042"> </span><span class="cls_043">측정</span><span class="cls_042"> </span><span class="cls_043">지점에서</span><span class="cls_042"> </span><span class="cls_043">수집된</span></div>
+<div style="position:absolute;left:437.47px;top:300.74px" class="cls_041"><span class="cls_041">주별</span><span class="cls_040">/</span><span class="cls_041">월별</span><span class="cls_040"> </span><span class="cls_041">주행거리</span></div>
+<div style="position:absolute;left:424.03px;top:338.23px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">단위</span><span class="cls_042">: Vehicle-Miles (Millions) -> </span><span class="cls_043">마일</span><span class="cls_042"> (</span><span class="cls_043">백만</span><span class="cls_042">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5395px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=405></div>
+<div style="position:absolute;left:324.89px;top:266.72px" class="cls_044"><span class="cls_044">1. </span><span class="cls_045">교통량</span><span class="cls_044"> </span><span class="cls_045">대비</span><span class="cls_044"> </span><span class="cls_045">심각도가</span><span class="cls_044"> </span><span class="cls_045">특히</span><span class="cls_044"> </span><span class="cls_045">높은</span><span class="cls_044"> </span><span class="cls_045">지역</span><span class="cls_044"> </span><span class="cls_045">탐색</span></div>
+<div style="position:absolute;left:324.89px;top:338.76px" class="cls_046"><span class="cls_046">2. </span><span class="cls_047">교통량</span><span class="cls_046"> - </span><span class="cls_047">사고</span><span class="cls_046"> </span><span class="cls_047">시계열</span><span class="cls_046"> </span><span class="cls_047">분석</span><span class="cls_046">, </span><span class="cls_047">지도</span><span class="cls_046"> </span><span class="cls_047">시각화</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5810px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_033"><span class="cls_033">NC(</span><span class="cls_037">노스캐롤라이나</span><span class="cls_033">) - GA(</span><span class="cls_037">조지아</span><span class="cls_033">) </span><span class="cls_037">비교분석</span></div>
+<div style="position:absolute;left:27.02px;top:69.34px" class="cls_048"><span class="cls_048">심각도</span><span class="cls_049"> - </span><span class="cls_048">교통량</span></div>
+<div style="position:absolute;left:25.30px;top:214.75px" class="cls_049"><span class="cls_049">165958</span><span class="cls_048">건</span></div>
+<div style="position:absolute;left:377.11px;top:214.75px" class="cls_049"><span class="cls_049">93614</span><span class="cls_048">건</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6225px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_033"><span class="cls_033">NC(</span><span class="cls_037">노스캐롤라이나</span><span class="cls_033">) - GA(</span><span class="cls_037">조지아</span><span class="cls_033">) </span><span class="cls_037">비교분석</span></div>
+<div style="position:absolute;left:27.02px;top:69.34px" class="cls_048"><span class="cls_048">환경적 요인 분석</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6640px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_033"><span class="cls_033">NC(</span><span class="cls_037">노스캐롤라이나</span><span class="cls_033">) - GA(</span><span class="cls_037">조지아</span><span class="cls_033">) </span><span class="cls_037">비교분석</span></div>
+<div style="position:absolute;left:27.02px;top:69.34px" class="cls_048"><span class="cls_048">지리적 요인 분석</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7055px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">칼럼별 분포도</span></div>
+<div style="position:absolute;left:414.84px;top:295.54px" class="cls_050"><span class="cls_050">•</span><span class="cls_051"> Corr</span><span class="cls_052">이</span><span class="cls_051"> 0.80</span><span class="cls_052">으로</span><span class="cls_051"> </span><span class="cls_052">높은</span><span class="cls_051"> </span><span class="cls_052">관련을</span><span class="cls_051"> </span><span class="cls_052">보임</span></div>
+<div style="position:absolute;left:414.84px;top:317.14px" class="cls_050"><span class="cls_050">•</span><span class="cls_051"> </span><span class="cls_052">교통량이</span><span class="cls_051"> </span><span class="cls_052">주는</span><span class="cls_051"> </span><span class="cls_052">영향을</span><span class="cls_051"> </span><span class="cls_052">배제하기</span><span class="cls_051"> </span><span class="cls_052">위하여</span><span class="cls_051"> </span><span class="cls_052">비율을</span><span class="cls_051"> </span><span class="cls_052">활용</span></div>
+<div style="position:absolute;left:498.53px;top:341.52px" class="cls_005"><span class="cls_005">사고</span><span class="cls_006"> </span><span class="cls_005">건수</span><span class="cls_053"> count</span></div>
+<div style="position:absolute;left:425.78px;top:355.20px" class="cls_053"><span class="cls_053">ratio =</span></div>
+<div style="position:absolute;left:493.97px;top:367.97px" class="cls_007"><span class="cls_007">교통량</span><span class="cls_054"> transport</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7470px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - </span><span class="cls_019">발생건수</span></div>
+<div style="position:absolute;left:572.90px;top:80.57px" class="cls_055"><span class="cls_055">California</span></div>
+<div style="position:absolute;left:560.42px;top:218.18px" class="cls_055"><span class="cls_055">Texas</span></div>
+<div style="position:absolute;left:563.66px;top:245.91px" class="cls_056"><span class="cls_056">Florida</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7885px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - </span><span class="cls_019">발생건수</span><span class="cls_018"> (</span><span class="cls_019">상위</span><span class="cls_018"> 8</span><span class="cls_019">개</span><span class="cls_018"> </span><span class="cls_019">주</span><span class="cls_018">)</span></div>
+<div style="position:absolute;left:142.13px;top:58.49px" class="cls_057"><span class="cls_057">California, Florida, Illinois, North Carolina, New York, Pennsylvania, South Carolina, Texas</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8300px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시간별</span><span class="cls_018"> plot - </span><span class="cls_019">발생건수</span><span class="cls_018"> (</span><span class="cls_019">상위</span><span class="cls_018"> 8</span><span class="cls_019">개</span><span class="cls_018"> </span><span class="cls_019">주</span><span class="cls_018">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8715px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - Ratio</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9130px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - Ratio (</span><span class="cls_019">상위</span><span class="cls_018"> 8</span><span class="cls_019">개</span><span class="cls_018"> </span><span class="cls_019">주</span><span class="cls_018">)</span></div>
+<div style="position:absolute;left:592.34px;top:159.26px" class="cls_003"><span class="cls_003">•</span></div>
+<div style="position:absolute;left:614.93px;top:159.26px" class="cls_003"><span class="cls_003">6, 7</span><span class="cls_004">월에</span><span class="cls_003"> </span><span class="cls_004">감소</span></div>
+<div style="position:absolute;left:592.34px;top:192.12px" class="cls_011"><span class="cls_011">•</span></div>
+<div style="position:absolute;left:614.93px;top:192.12px" class="cls_010"><span class="cls_010">주황색</span><span class="cls_011">:</span></div>
+<div style="position:absolute;left:614.93px;top:208.97px" class="cls_003"><span class="cls_003">Washington</span></div>
+<div style="position:absolute;left:614.93px;top:225.77px" class="cls_003"><span class="cls_003">DC</span></div>
+<div style="position:absolute;left:592.34px;top:258.43px" class="cls_003"><span class="cls_003">•</span></div>
+<div style="position:absolute;left:614.93px;top:258.43px" class="cls_004"><span class="cls_004">초록색</span><span class="cls_003">:</span></div>
+<div style="position:absolute;left:614.93px;top:275.21px" class="cls_011"><span class="cls_011">Minnesota</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9545px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - Duration</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9960px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - Duration (</span><span class="cls_019">상위</span><span class="cls_018"> 8</span><span class="cls_019">개</span><span class="cls_018"> </span><span class="cls_019">주</span><span class="cls_018">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10375px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_058"> plot - Severity (</span><span class="cls_019">상위</span><span class="cls_058"> 8</span><span class="cls_019">개</span><span class="cls_058"> </span><span class="cls_019">주</span><span class="cls_058">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10790px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background27.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">시계열</span><span class="cls_018"> plot - Distance (</span><span class="cls_019">상위</span><span class="cls_018"> 8</span><span class="cls_019">개</span><span class="cls_018"> </span><span class="cls_019">주</span><span class="cls_018">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11205px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background28.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">사전지식</span><span class="cls_018"> - </span><span class="cls_019">인구밀도</span></div>
+<div style="position:absolute;left:582.84px;top:358.56px" class="cls_052"><span class="cls_052">출처</span><span class="cls_051"> : </span><span class="cls_052">위키백과</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11620px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background29.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">주별</span><span class="cls_018"> plot - count</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12035px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background30.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">주별</span><span class="cls_018"> plot - ratio</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12450px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background31.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">사전지식</span><span class="cls_018"> - </span><span class="cls_019">주별</span><span class="cls_018"> </span><span class="cls_019">속도제한</span></div>
+<div style="position:absolute;left:561.26px;top:346.58px" class="cls_052"><span class="cls_052">출처</span><span class="cls_051"> : </span><span class="cls_052">위키백과</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12865px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background32.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">주별</span><span class="cls_018"> plot - duration time</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13280px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background33.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">주별</span><span class="cls_018"> plot - distance</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13695px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background34.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_019"><span class="cls_019">주별</span><span class="cls_018"> plot - severity</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14110px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background35.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_059"><span class="cls_059">교통량별</span><span class="cls_060"> </span><span class="cls_059">사고</span><span class="cls_060"> </span><span class="cls_059">분석</span><span class="cls_060"> - </span><span class="cls_059">결론</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">한계점</span></div>
+<div style="position:absolute;left:32.69px;top:240.72px" class="cls_061"><span class="cls_061">결론</span><span class="cls_062">: </span><span class="cls_061">인구밀도</span><span class="cls_062"> </span><span class="cls_061">많을수록</span><span class="cls_062"> </span><span class="cls_061">사고건수</span><span class="cls_062"> </span><span class="cls_061">높고</span><span class="cls_062">, </span><span class="cls_061">주별</span><span class="cls_062"> </span><span class="cls_061">제한속도가</span><span class="cls_062"> </span><span class="cls_061">높을수록</span><span class="cls_062"> </span><span class="cls_061">심각도</span><span class="cls_062">(Severity) </span><span class="cls_061">크다</span><span class="cls_062">.</span></div>
+<div style="position:absolute;left:32.69px;top:305.57px" class="cls_061"><span class="cls_061">한계점</span><span class="cls_062">: </span><span class="cls_061">데이터의</span><span class="cls_062"> </span><span class="cls_061">변동폭이</span><span class="cls_062"> </span><span class="cls_061">심해서</span><span class="cls_062"> </span><span class="cls_061">시계열로</span><span class="cls_062"> </span><span class="cls_061">분석할</span><span class="cls_062"> </span><span class="cls_061">때</span><span class="cls_062"> </span><span class="cls_061">유의미한</span><span class="cls_062"> </span><span class="cls_061">결과를</span><span class="cls_062"> </span><span class="cls_061">분석하기</span><span class="cls_062"> </span><span class="cls_061">어렵다</span><span class="cls_062">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14525px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background36.jpg" width=720 height=405></div>
+<div style="position:absolute;left:330.48px;top:27.36px" class="cls_014"><span class="cls_014">03</span></div>
+<div style="position:absolute;left:142.18px;top:170.81px" class="cls_013"><span class="cls_013">2</span><span class="cls_012">차</span><span class="cls_013"> </span><span class="cls_012">이상</span><span class="cls_013"> </span><span class="cls_012">연쇄사고</span><span class="cls_013"> </span><span class="cls_012">분석</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14940px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background37.jpg" width=720 height=405></div>
+<div style="position:absolute;left:282.22px;top:177.56px" class="cls_063"><span class="cls_063">1. </span><span class="cls_064">연쇄사고</span><span class="cls_063"> Feature </span><span class="cls_064">생성</span></div>
+<div style="position:absolute;left:282.22px;top:249.62px" class="cls_065"><span class="cls_065">2. </span><span class="cls_066">연쇄사고</span><span class="cls_065"> </span><span class="cls_066">분포</span><span class="cls_065"> </span><span class="cls_066">및</span><span class="cls_065"> </span><span class="cls_066">네트워크</span></div>
+<div style="position:absolute;left:282.22px;top:321.62px" class="cls_063"><span class="cls_063">3. </span><span class="cls_064">연쇄사고에</span><span class="cls_063"> </span><span class="cls_064">영향을</span><span class="cls_063"> </span><span class="cls_064">주는</span><span class="cls_063"> </span><span class="cls_064">요소</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15355px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background38.jpg" width=720 height=405></div>
+<div style="position:absolute;left:63.91px;top:33.98px" class="cls_019"><span class="cls_019">연쇄적인 사고에 대한 탐구</span></div>
+<div style="position:absolute;left:53.76px;top:117.96px" class="cls_016"><span class="cls_016">유사</span><span class="cls_017"> </span><span class="cls_016">시간대에</span><span class="cls_017">,</span><span class="cls_016">인접한</span><span class="cls_017"> </span><span class="cls_016">위치에서</span><span class="cls_017"> </span><span class="cls_016">많은</span><span class="cls_017"> </span><span class="cls_016">수의</span><span class="cls_017"> </span><span class="cls_016">사고가</span><span class="cls_017"> </span><span class="cls_016">발생한</span><span class="cls_017"> </span><span class="cls_016">것을</span><span class="cls_017"> </span><span class="cls_016">보고</span><span class="cls_017">, ‘</span><span class="cls_016">연쇄적인</span><span class="cls_017"> </span><span class="cls_016">사고</span><span class="cls_017">’ </span><span class="cls_016">에</span><span class="cls_017"> </span><span class="cls_016">대한</span><span class="cls_017"> </span><span class="cls_016">의문점이</span><span class="cls_017"> </span><span class="cls_016">발생</span></div>
+<div style="position:absolute;left:57.60px;top:175.75px" class="cls_088"><span class="cls_088">직접적인</span><span class="cls_089"> </span><span class="cls_088">연쇄적</span><span class="cls_089"> </span><span class="cls_088">충돌이</span><span class="cls_089"> </span><span class="cls_088">없더라도</span><span class="cls_017">, </span><span class="cls_016">사고로</span><span class="cls_017"> </span><span class="cls_016">인한</span><span class="cls_017"> </span><span class="cls_016">병목</span><span class="cls_017"> </span><span class="cls_016">발생</span><span class="cls_017">, </span><span class="cls_016">등</span><span class="cls_017"> </span><span class="cls_016">환경</span><span class="cls_017"> </span><span class="cls_016">영향으로</span><span class="cls_017"> </span><span class="cls_016">부차적</span><span class="cls_017"> </span><span class="cls_016">사고가</span><span class="cls_017"> </span><span class="cls_016">발생할</span><span class="cls_017"> </span><span class="cls_016">수</span><span class="cls_017"> </span><span class="cls_016">있음</span></div>
+<div style="position:absolute;left:131.83px;top:235.13px" class="cls_022"><span class="cls_022">연쇄적</span><span class="cls_021"> </span><span class="cls_022">사고가</span><span class="cls_021"> </span><span class="cls_022">발생할</span><span class="cls_021"> </span><span class="cls_022">경우</span><span class="cls_021">, </span><span class="cls_090">기존</span><span class="cls_091"> </span><span class="cls_090">사고에</span><span class="cls_091"> </span><span class="cls_090">비해</span><span class="cls_091"> </span><span class="cls_090">심각성이</span><span class="cls_091"> </span><span class="cls_090">약해질까</span><span class="cls_091"> (Dilute</span><span class="cls_090">될까</span><span class="cls_091">)?</span></div>
+<div style="position:absolute;left:36.05px;top:288.96px" class="cls_016"><span class="cls_016">직접</span><span class="cls_017"> </span><span class="cls_016">추돌이</span><span class="cls_017"> </span><span class="cls_016">아니더라도</span><span class="cls_017">, Distance(mi) </span><span class="cls_016">내에서</span><span class="cls_017"> </span><span class="cls_089">- </span><span class="cls_088">한</span><span class="cls_089"> </span><span class="cls_088">사고가</span><span class="cls_089"> </span><span class="cls_088">교통환경</span><span class="cls_089"> </span><span class="cls_088">변화</span><span class="cls_089"> </span><span class="cls_088">등으로</span><span class="cls_089"> </span><span class="cls_088">다른</span><span class="cls_089"> </span><span class="cls_088">사고에</span><span class="cls_089"> </span><span class="cls_088">어떤</span><span class="cls_089"> </span><span class="cls_088">영향을</span><span class="cls_089"> </span><span class="cls_088">줄까</span><span class="cls_089">?</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15770px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background39.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:21.53px" class="cls_018"><span class="cls_018">1. </span><span class="cls_019">연쇄사고</span><span class="cls_018"> Feature </span><span class="cls_019">생성</span></div>
+<div style="position:absolute;left:182.62px;top:72.65px" class="cls_051"><span class="cls_051">Hypothesis: </span><span class="cls_052">특정</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">일어난</span><span class="cls_051"> </span><span class="cls_052">뒤</span><span class="cls_051"> </span><span class="cls_052">그</span><span class="cls_068"> </span><span class="cls_067">사고의</span><span class="cls_068"> </span><span class="cls_067">영향이</span><span class="cls_068"> </span><span class="cls_067">남아있는</span><span class="cls_068"> </span><span class="cls_067">범위에서</span><span class="cls_068">,</span></div>
+<div style="position:absolute;left:173.98px;top:94.23px" class="cls_069"><span class="cls_069">그 사고의</span><span class="cls_070"> </span><span class="cls_069">영향이</span><span class="cls_070"> </span><span class="cls_069">남아있는시간</span><span class="cls_070"> </span><span class="cls_069">내</span><span class="cls_035">에</span><span class="cls_036"> </span><span class="cls_035">벌어진</span><span class="cls_036"> </span><span class="cls_035">사고를</span><span class="cls_070"> </span><span class="cls_069">연쇄사고라고</span><span class="cls_070"> </span><span class="cls_069">볼</span><span class="cls_070"> </span><span class="cls_069">수</span><span class="cls_070"> </span><span class="cls_069">있다</span><span class="cls_070">.</span></div>
+<div style="position:absolute;left:28.42px;top:120.46px" class="cls_051"><span class="cls_051">* Feature </span><span class="cls_052">생성</span><span class="cls_051"> </span><span class="cls_052">로직</span><span class="cls_051">:</span></div>
+<div style="position:absolute;left:28.42px;top:149.28px" class="cls_050"><span class="cls_050">1)</span></div>
+<div style="position:absolute;left:55.54px;top:149.28px" class="cls_052"><span class="cls_052">특정</span><span class="cls_051"> </span><span class="cls_052">사고의</span><span class="cls_051"> Start_Time, End_Time</span><span class="cls_052">사이에</span><span class="cls_051"> </span><span class="cls_052">발생</span></div>
+<div style="position:absolute;left:28.42px;top:163.66px" class="cls_071"><span class="cls_071">2)</span></div>
+<div style="position:absolute;left:55.54px;top:163.66px" class="cls_035"><span class="cls_035">해당</span><span class="cls_036"> </span><span class="cls_035">사고의</span><span class="cls_036"> Start_Lat, Start_Lng </span><span class="cls_035">기준으로</span><span class="cls_036">, Distance(mi) </span><span class="cls_035">의</span><span class="cls_036"> </span><span class="cls_035">반경</span><span class="cls_036"> </span><span class="cls_035">이내에서</span><span class="cls_036"> </span><span class="cls_035">발생</span></div>
+<div style="position:absolute;left:28.42px;top:192.50px" class="cls_052"><span class="cls_052">위 두 조건을 만족할시 선행 사고가후행 사고에영향을준것으로판단함</span><span class="cls_051">.</span></div>
+<div style="position:absolute;left:27.02px;top:234.87px" class="cls_036"><span class="cls_036">* </span><span class="cls_035">새로</span><span class="cls_036"> </span><span class="cls_035">생성한</span><span class="cls_036">Feature:</span></div>
+<div style="position:absolute;left:27.02px;top:263.71px" class="cls_050"><span class="cls_050">1)</span></div>
+<div style="position:absolute;left:54.14px;top:263.71px" class="cls_051"><span class="cls_051">Secondary_Accident: </span><span class="cls_052">해당</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">영향을</span><span class="cls_051"> </span><span class="cls_052">줘서</span><span class="cls_051"> </span><span class="cls_052">발생한</span></div>
+<div style="position:absolute;left:54.14px;top:278.09px" class="cls_035"><span class="cls_035">연쇄사고의 수</span></div>
+<div style="position:absolute;left:27.02px;top:292.54px" class="cls_050"><span class="cls_050">2)</span></div>
+<div style="position:absolute;left:54.14px;top:292.54px" class="cls_051"><span class="cls_051">Severity_ave: </span><span class="cls_052">해당</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">발생시킨</span><span class="cls_051"> </span><span class="cls_052">연쇄사고의</span><span class="cls_051"> Severity</span><span class="cls_052">의</span><span class="cls_051"> </span><span class="cls_052">평균</span></div>
+<div style="position:absolute;left:27.02px;top:306.94px" class="cls_050"><span class="cls_050">3)</span></div>
+<div style="position:absolute;left:54.14px;top:306.94px" class="cls_051"><span class="cls_051">main_Accident_code: </span><span class="cls_052">해당</span><span class="cls_051"> </span><span class="cls_052">사고를</span><span class="cls_051"> </span><span class="cls_052">일으킨</span><span class="cls_051"> </span><span class="cls_052">사고</span><span class="cls_051"> (1</span><span class="cls_052">차</span><span class="cls_051"> </span><span class="cls_052">사고이면</span></div>
+<div style="position:absolute;left:54.14px;top:321.31px" class="cls_035"><span class="cls_035">본인</span><span class="cls_036">)</span></div>
+<div style="position:absolute;left:27.02px;top:335.76px" class="cls_050"><span class="cls_050">4)</span></div>
+<div style="position:absolute;left:54.14px;top:335.76px" class="cls_051"><span class="cls_051">main_Accident_oder: </span><span class="cls_052">해당</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">몇차</span><span class="cls_051"> </span><span class="cls_052">사고인지</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:16185px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background40.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">2. </span><span class="cls_059">연쇄사고</span><span class="cls_072"> </span><span class="cls_059">분포</span><span class="cls_072"> </span><span class="cls_059">및</span><span class="cls_072"> </span><span class="cls_059">네트워크</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:16600px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background41.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_035"><span class="cls_035">연쇄사고의</span><span class="cls_036"> </span><span class="cls_035">특성을</span><span class="cls_036"> </span><span class="cls_035">살펴보고싶기</span><span class="cls_036"> </span><span class="cls_035">때문에</span><span class="cls_036">, </span><span class="cls_035">발생시킨</span><span class="cls_036"> </span><span class="cls_035">연쇄사고가</span><span class="cls_036"> 1</span><span class="cls_035">개이상</span><span class="cls_036"> </span><span class="cls_035">있거나</span><span class="cls_036">, </span><span class="cls_035">최소</span><span class="cls_036"> </span><span class="cls_035">본인이</span><span class="cls_036"> 1</span><span class="cls_035">차사고가</span><span class="cls_036"> </span><span class="cls_035">아닌</span><span class="cls_036"> </span><span class="cls_035">것을</span><span class="cls_036"> </span><span class="cls_035">필터링해서</span><span class="cls_036"> </span><span class="cls_035">보았다</span><span class="cls_036">.</span></div>
+<div style="position:absolute;left:27.02px;top:73.27px" class="cls_051"><span class="cls_051">(</span><span class="cls_052">즉</span><span class="cls_051">, </span><span class="cls_052">단일</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">아닌</span><span class="cls_051"> </span><span class="cls_052">사고들만</span><span class="cls_051">)</span></div>
+<div style="position:absolute;left:132.91px;top:104.81px" class="cls_003"><span class="cls_003">&lt;1</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:500.40px;top:104.81px" class="cls_003"><span class="cls_003">&lt;2</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17015px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background42.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_035"><span class="cls_035">연쇄사고의</span><span class="cls_036"> </span><span class="cls_035">특성을</span><span class="cls_036"> </span><span class="cls_035">살펴보고싶기</span><span class="cls_036"> </span><span class="cls_035">때문에</span><span class="cls_036">, </span><span class="cls_035">발생시킨</span><span class="cls_036"> </span><span class="cls_035">연쇄사고가</span><span class="cls_036"> 1</span><span class="cls_035">개이상</span><span class="cls_036"> </span><span class="cls_035">있거나</span><span class="cls_036">, </span><span class="cls_035">최소</span><span class="cls_036"> </span><span class="cls_035">본인이</span><span class="cls_036"> 1</span><span class="cls_035">차사고가</span><span class="cls_036"> </span><span class="cls_035">아닌</span><span class="cls_036"> </span><span class="cls_035">것을</span><span class="cls_036"> </span><span class="cls_035">필터링해서</span><span class="cls_036"> </span><span class="cls_035">보았다</span><span class="cls_036">.</span></div>
+<div style="position:absolute;left:27.02px;top:73.27px" class="cls_051"><span class="cls_051">(</span><span class="cls_052">즉</span><span class="cls_051">, </span><span class="cls_052">단일</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">아닌</span><span class="cls_051"> </span><span class="cls_052">사고들만</span><span class="cls_051">)</span></div>
+<div style="position:absolute;left:132.91px;top:104.81px" class="cls_003"><span class="cls_003">&lt;3</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:479.54px;top:104.81px" class="cls_003"><span class="cls_003">&lt;4</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">이상의</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17430px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background43.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_036"><span class="cls_036">1</span><span class="cls_035">차</span><span class="cls_036">, 2</span><span class="cls_035">차</span><span class="cls_036">, 3</span><span class="cls_035">차</span><span class="cls_036">, 4</span><span class="cls_035">차</span><span class="cls_036"> </span><span class="cls_035">이상</span><span class="cls_036"> </span><span class="cls_035">사고들의</span><span class="cls_036"> </span><span class="cls_035">경우</span><span class="cls_036"> Severity </span><span class="cls_035">분포를</span><span class="cls_036"> </span><span class="cls_035">살펴보기로</span><span class="cls_036"> </span><span class="cls_035">함</span></div>
+<div style="position:absolute;left:132.91px;top:118.71px" class="cls_011"><span class="cls_011">&lt;1</span><span class="cls_010">차</span><span class="cls_011"> </span><span class="cls_010">사고</span><span class="cls_011">></span></div>
+<div style="position:absolute;left:500.40px;top:118.71px" class="cls_011"><span class="cls_011">&lt;2</span><span class="cls_010">차</span><span class="cls_011"> </span><span class="cls_010">사고</span><span class="cls_011">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17845px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background44.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_036"><span class="cls_036">1</span><span class="cls_035">차</span><span class="cls_036">, 2</span><span class="cls_035">차</span><span class="cls_036">, 3</span><span class="cls_035">차</span><span class="cls_036">, 4</span><span class="cls_035">차</span><span class="cls_036"> </span><span class="cls_035">이상</span><span class="cls_036"> </span><span class="cls_035">사고들의</span><span class="cls_036"> </span><span class="cls_035">경우</span><span class="cls_036"> Severity </span><span class="cls_035">분포를</span><span class="cls_036"> </span><span class="cls_035">살펴보기로</span><span class="cls_036"> </span><span class="cls_035">함</span></div>
+<div style="position:absolute;left:27.02px;top:80.55px" class="cls_069"><span class="cls_069">직관적으로</span><span class="cls_070"> </span><span class="cls_069">보았을</span><span class="cls_070"> </span><span class="cls_069">때</span><span class="cls_070">, Severity</span><span class="cls_069">가</span><span class="cls_070"> </span><span class="cls_069">낮은</span><span class="cls_070"> </span><span class="cls_069">사고들의</span><span class="cls_070"> </span><span class="cls_069">비중</span><span class="cls_070"> (1, 2) </span><span class="cls_069">이</span><span class="cls_070"> </span><span class="cls_069">사고의</span><span class="cls_070"> </span><span class="cls_069">차수가</span><span class="cls_070"> </span><span class="cls_069">높아질수록</span><span class="cls_070"> </span><span class="cls_069">오히려</span><span class="cls_070"> </span><span class="cls_069">낮아지는</span><span class="cls_070"> </span><span class="cls_069">경향이</span><span class="cls_070"> </span><span class="cls_069">보임</span></div>
+<div style="position:absolute;left:132.91px;top:118.71px" class="cls_011"><span class="cls_011">&lt;3</span><span class="cls_010">차</span><span class="cls_011"> </span><span class="cls_010">사고</span><span class="cls_011">></span></div>
+<div style="position:absolute;left:479.54px;top:118.71px" class="cls_011"><span class="cls_011">&lt;4</span><span class="cls_010">차</span><span class="cls_011"> </span><span class="cls_010">이상의</span><span class="cls_011"> </span><span class="cls_010">사고</span><span class="cls_011">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:18260px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background45.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:26.74px;top:115.20px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">사고들의경우</span><span class="cls_042"> 1</span><span class="cls_043">차부터</span><span class="cls_042"> </span><span class="cls_043">최대</span><span class="cls_042"> 35</span><span class="cls_043">차</span><span class="cls_042"> </span><span class="cls_043">사고까지</span><span class="cls_042"> </span><span class="cls_043">존재</span></div>
+<div style="position:absolute;left:26.74px;top:151.18px" class="cls_040"><span class="cls_040">• </span><span class="cls_041">보다</span><span class="cls_040"> </span><span class="cls_041">정확한</span><span class="cls_040"> </span><span class="cls_041">파악을</span><span class="cls_040"> </span><span class="cls_041">위해</span><span class="cls_040">, </span><span class="cls_041">차수가</span><span class="cls_040"> </span><span class="cls_041">높아질</span><span class="cls_040"> </span><span class="cls_041">수록</span><span class="cls_040"> Severity</span></div>
+<div style="position:absolute;left:40.18px;top:171.14px" class="cls_042"><span class="cls_042">(</span><span class="cls_043">심각도</span><span class="cls_042">) 1~4</span><span class="cls_043">인</span><span class="cls_042"> </span><span class="cls_043">사고들이</span><span class="cls_042"> </span><span class="cls_043">차지하는</span><span class="cls_042"> </span><span class="cls_043">비율을</span><span class="cls_042"> </span><span class="cls_043">살펴보기로</span><span class="cls_042"> </span><span class="cls_043">함</span></div>
+<div style="position:absolute;left:26.74px;top:207.17px" class="cls_042"><span class="cls_042">• </span><span class="cls_043">한 사고가 영향을 준 사고의 수가 </span><span class="cls_042">100</span><span class="cls_043">건이 넘는</span><span class="cls_042"> </span><span class="cls_043">경우가 존재</span><span class="cls_042">.</span></div>
+<div style="position:absolute;left:40.18px;top:227.07px" class="cls_041"><span class="cls_041">꼭 직접적인</span><span class="cls_040"> </span><span class="cls_041">영향을</span><span class="cls_040"> </span><span class="cls_041">주지</span><span class="cls_040"> </span><span class="cls_041">않았을수도</span><span class="cls_040"> </span><span class="cls_041">있지만</span><span class="cls_040">, </span><span class="cls_041">한</span><span class="cls_040"> </span><span class="cls_041">사고의</span><span class="cls_040"> </span><span class="cls_041">영향이</span></div>
+<div style="position:absolute;left:40.18px;top:247.27px" class="cls_043"><span class="cls_043">미치는</span><span class="cls_042"> </span><span class="cls_043">범위</span><span class="cls_042">/</span><span class="cls_043">시간</span><span class="cls_042"> </span><span class="cls_043">내에서</span><span class="cls_042"> </span><span class="cls_043">발생한</span><span class="cls_042"> </span><span class="cls_043">사고가</span><span class="cls_042"> </span><span class="cls_043">맞으므로</span><span class="cls_042"> </span><span class="cls_043">제거하지</span></div>
+<div style="position:absolute;left:40.18px;top:267.17px" class="cls_041"><span class="cls_041">않고</span><span class="cls_040"> </span><span class="cls_041">모두</span><span class="cls_040"> </span><span class="cls_041">포함</span><span class="cls_040">. (</span><span class="cls_041">정말</span><span class="cls_040"> </span><span class="cls_041">대형사고이거나</span><span class="cls_040">, </span><span class="cls_041">대량</span><span class="cls_040"> </span><span class="cls_041">사고를</span><span class="cls_040"> </span><span class="cls_041">일으키는</span></div>
+<div style="position:absolute;left:40.18px;top:287.14px" class="cls_043"><span class="cls_043">환경병수가</span><span class="cls_042"> </span><span class="cls_043">있었던</span><span class="cls_042"> </span><span class="cls_043">것으로</span><span class="cls_042"> </span><span class="cls_043">추정</span><span class="cls_042">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:18675px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background46.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_035"><span class="cls_035">차수가</span><span class="cls_036"> </span><span class="cls_035">올라갈수록</span><span class="cls_036"> </span><span class="cls_035">전체적으로</span><span class="cls_036"> Severity 4</span><span class="cls_035">의</span><span class="cls_036"> </span><span class="cls_035">사고</span><span class="cls_036"> </span><span class="cls_035">비중이</span><span class="cls_036"> </span><span class="cls_035">높아짐을</span><span class="cls_036"> </span><span class="cls_035">볼</span><span class="cls_036"> </span><span class="cls_035">수</span><span class="cls_036"> </span><span class="cls_035">있지만</span><span class="cls_036">, Spike</span><span class="cls_035">가</span><span class="cls_036"> </span><span class="cls_035">있어</span><span class="cls_036"> </span><span class="cls_035">정확하게</span><span class="cls_036"> </span><span class="cls_035">파악하기는</span><span class="cls_036"> </span><span class="cls_035">어려움</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:19090px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background47.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_036"><span class="cls_036">Severity 1</span><span class="cls_035">의</span><span class="cls_036"> </span><span class="cls_035">사고일</span><span class="cls_036"> </span><span class="cls_035">경우</span><span class="cls_036"> </span><span class="cls_035">모수가</span><span class="cls_036"> </span><span class="cls_035">가장</span><span class="cls_036"> </span><span class="cls_035">적음을</span><span class="cls_036"> </span><span class="cls_035">알</span><span class="cls_036"> </span><span class="cls_035">수</span><span class="cls_036"> </span><span class="cls_035">있음</span><span class="cls_036">. </span><span class="cls_035">따로</span><span class="cls_036"> </span><span class="cls_035">떼어</span><span class="cls_036"> plot</span><span class="cls_035">할</span><span class="cls_036"> </span><span class="cls_035">시</span><span class="cls_036">, 10</span><span class="cls_035">차가</span><span class="cls_036"> </span><span class="cls_035">넘어가면</span><span class="cls_036"> </span><span class="cls_035">거의</span><span class="cls_036"> Severity 1</span><span class="cls_035">의</span><span class="cls_036"> </span><span class="cls_035">사고가</span><span class="cls_036"> </span><span class="cls_035">발생하지</span></div>
+<div style="position:absolute;left:27.02px;top:73.27px" class="cls_052"><span class="cls_052">않음을</span><span class="cls_051"> </span><span class="cls_052">볼</span><span class="cls_051"> </span><span class="cls_052">수</span><span class="cls_051"> </span><span class="cls_052">있음</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:19505px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background48.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:58.83px" class="cls_070"><span class="cls_070">Spike </span><span class="cls_069">를</span><span class="cls_070"> </span><span class="cls_069">줄이기</span><span class="cls_070"> </span><span class="cls_069">위해</span><span class="cls_070"> </span><span class="cls_069">사고</span><span class="cls_070"> </span><span class="cls_069">차수의</span><span class="cls_070"> </span><span class="cls_069">구간을</span><span class="cls_070"> </span><span class="cls_069">나누어</span><span class="cls_070"> </span><span class="cls_069">비율을</span><span class="cls_070"> </span><span class="cls_069">계산함</span><span class="cls_070">.</span></div>
+<div style="position:absolute;left:531.79px;top:69.00px" class="cls_031"><span class="cls_031">G1: 147027</span></div>
+<div style="position:absolute;left:66.72px;top:84.41px" class="cls_008"><span class="cls_008">1</span><span class="cls_007">차</span><span class="cls_008">: 147027</span><span class="cls_007">개</span></div>
+<div style="position:absolute;left:531.79px;top:107.42px" class="cls_031"><span class="cls_031">G2: 137063</span></div>
+<div style="position:absolute;left:66.72px;top:121.73px" class="cls_073"><span class="cls_073">2</span><span class="cls_074">차</span><span class="cls_073">: 137063</span><span class="cls_074">개</span></div>
+<div style="position:absolute;left:312.17px;top:128.02px" class="cls_075"><span class="cls_075">1</span><span class="cls_076">차</span><span class="cls_075">: Group1</span></div>
+<div style="position:absolute;left:531.79px;top:145.80px" class="cls_073"><span class="cls_073">G3: 25556</span></div>
+<div style="position:absolute;left:314.33px;top:154.40px" class="cls_079"><span class="cls_079">2</span><span class="cls_080">차</span><span class="cls_079">: Goup2</span></div>
+<div style="position:absolute;left:66.72px;top:157.08px" class="cls_003"><span class="cls_003">3</span><span class="cls_004">차</span><span class="cls_003">: 21980</span><span class="cls_004">개</span></div>
+<div style="position:absolute;left:305.69px;top:180.84px" class="cls_075"><span class="cls_075">3~4</span><span class="cls_076">차</span><span class="cls_075">:Group3</span></div>
+<div style="position:absolute;left:66.72px;top:189.51px" class="cls_036"><span class="cls_036">4</span><span class="cls_035">차</span><span class="cls_036">: 3576</span><span class="cls_035">개</span></div>
+<div style="position:absolute;left:531.79px;top:184.23px" class="cls_073"><span class="cls_073">G4: 3647</span></div>
+<div style="position:absolute;left:305.69px;top:207.26px" class="cls_075"><span class="cls_075">5~9</span><span class="cls_076">차</span><span class="cls_075">:Group4</span></div>
+<div style="position:absolute;left:66.72px;top:222.00px" class="cls_077"><span class="cls_077">5</span><span class="cls_078">차</span><span class="cls_077">: 1851</span><span class="cls_078">개</span></div>
+<div style="position:absolute;left:531.79px;top:222.65px" class="cls_073"><span class="cls_073">G5: 1197</span></div>
+<div style="position:absolute;left:299.21px;top:233.64px" class="cls_079"><span class="cls_079">10~15</span><span class="cls_080">차</span><span class="cls_079">: Group5</span></div>
+<div style="position:absolute;left:297.53px;top:260.09px" class="cls_075"><span class="cls_075">15</span><span class="cls_076">차</span><span class="cls_075"> </span><span class="cls_076">이상</span><span class="cls_075">: Group6</span></div>
+<div style="position:absolute;left:531.79px;top:261.08px" class="cls_073"><span class="cls_073">G6: 81</span></div>
+<div style="position:absolute;left:53.14px;top:307.51px" class="cls_050"><span class="cls_050">•</span><span class="cls_068"> </span><span class="cls_067">유의사항</span><span class="cls_068">: </span><span class="cls_067">연쇄사고수의</span><span class="cls_068"> </span><span class="cls_067">편차가</span><span class="cls_068"> </span><span class="cls_067">워낙</span><span class="cls_068"> </span><span class="cls_067">크며</span><span class="cls_068">, </span><span class="cls_067">데이터</span><span class="cls_068"> </span><span class="cls_067">자체의</span><span class="cls_068"> Severity</span><span class="cls_067">기준</span><span class="cls_068"> (</span><span class="cls_067">및</span><span class="cls_068"> </span><span class="cls_067">비율</span><span class="cls_068">)</span><span class="cls_067">이</span><span class="cls_068"> </span><span class="cls_067">워낙</span><span class="cls_068"> </span><span class="cls_067">넓고</span><span class="cls_068"> </span><span class="cls_067">불명확해서</span><span class="cls_068"> </span><span class="cls_067">이렇게</span></div>
+<div style="position:absolute;left:66.58px;top:321.91px" class="cls_067"><span class="cls_067">구간을</span><span class="cls_068"> </span><span class="cls_067">나누더라도</span><span class="cls_068"> </span><span class="cls_067">각</span><span class="cls_068"> </span><span class="cls_067">차수의</span><span class="cls_068"> </span><span class="cls_067">구간별</span><span class="cls_068"> </span><span class="cls_067">밸런스가</span><span class="cls_068"> </span><span class="cls_067">맞지</span><span class="cls_068"> </span><span class="cls_067">않는다</span><span class="cls_068">.</span></div>
+<div style="position:absolute;left:53.14px;top:350.74px" class="cls_050"><span class="cls_050">•</span><span class="cls_068"> </span><span class="cls_067">그러나</span><span class="cls_068">, </span><span class="cls_067">실제</span><span class="cls_068"> </span><span class="cls_067">사고가</span><span class="cls_068"> </span><span class="cls_067">일어나는</span><span class="cls_068"> </span><span class="cls_067">차수의</span><span class="cls_068"> </span><span class="cls_067">현실적</span><span class="cls_068"> </span><span class="cls_067">분포를</span><span class="cls_068"> </span><span class="cls_067">생각하면</span><span class="cls_068"> (ex. 1</span><span class="cls_067">차사고의</span><span class="cls_068"> </span><span class="cls_067">확률</span><span class="cls_068"> > 10</span><span class="cls_067">차사고의</span><span class="cls_068"> </span><span class="cls_067">확률</span><span class="cls_068">) </span><span class="cls_067">해석의</span><span class="cls_068"> </span><span class="cls_067">유의점이</span></div>
+<div style="position:absolute;left:66.58px;top:365.14px" class="cls_067"><span class="cls_067">있지만 무의미하지 않다</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:19920px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background49.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:49.92px" class="cls_035"><span class="cls_035">절대적인</span><span class="cls_036"> </span><span class="cls_035">모수와</span><span class="cls_036"> </span><span class="cls_035">별개로</span><span class="cls_036">, Severity </span><span class="cls_035">내의</span><span class="cls_036"> </span><span class="cls_035">비율이</span><span class="cls_036"> </span><span class="cls_035">상위</span><span class="cls_036"> </span><span class="cls_035">그룹으로</span><span class="cls_036"> </span><span class="cls_035">갈수록</span><span class="cls_036"> Severity 4</span><span class="cls_035">는</span><span class="cls_036"> </span><span class="cls_035">상승구도를</span><span class="cls_036"> </span><span class="cls_035">보임을</span><span class="cls_036"> </span><span class="cls_035">알</span><span class="cls_036"> </span><span class="cls_035">수</span><span class="cls_036"> </span><span class="cls_035">있고</span><span class="cls_036">, 2~3</span><span class="cls_035">은</span><span class="cls_036"> </span><span class="cls_035">하락의</span><span class="cls_036"> </span><span class="cls_035">구도를</span></div>
+<div style="position:absolute;left:27.02px;top:64.37px" class="cls_052"><span class="cls_052">보임을</span><span class="cls_051"> </span><span class="cls_052">알</span><span class="cls_051"> </span><span class="cls_052">수</span><span class="cls_051"> </span><span class="cls_052">있다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:20335px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background50.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span></div>
+<div style="position:absolute;left:27.02px;top:61.68px" class="cls_052"><span class="cls_052">반면</span><span class="cls_051"> ‘</span><span class="cls_052">상관관계</span><span class="cls_051">’</span><span class="cls_052">는</span><span class="cls_051"> </span><span class="cls_052">거의</span><span class="cls_051"> </span><span class="cls_052">없음을</span><span class="cls_051"> </span><span class="cls_052">볼</span><span class="cls_051"> </span><span class="cls_052">수</span><span class="cls_051"> </span><span class="cls_052">있다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:20750px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background51.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_059"><span class="cls_059">참고</span><span class="cls_060"> - </span><span class="cls_059">네트워크</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:21165px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background52.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_059"><span class="cls_059">참고</span><span class="cls_060"> - </span><span class="cls_059">네트워크</span><span class="cls_060"> (</span><span class="cls_059">서부지역</span><span class="cls_060">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:21580px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background53.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_059"><span class="cls_059">참고</span><span class="cls_060"> - </span><span class="cls_059">네트워크</span><span class="cls_060"> (</span><span class="cls_059">남부지역</span><span class="cls_060">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:21995px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background54.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_059"><span class="cls_059">참고</span><span class="cls_060"> - </span><span class="cls_059">네트워크</span><span class="cls_060"> (</span><span class="cls_059">동부지역</span><span class="cls_060">)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:22410px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background55.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">2. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span><span class="cls_060"> - </span><span class="cls_059">결론</span></div>
+<div style="position:absolute;left:27.02px;top:63.55px" class="cls_051"><span class="cls_051">1. </span><span class="cls_052">사고의</span><span class="cls_051"> </span><span class="cls_052">심각도가</span><span class="cls_051"> </span><span class="cls_052">높지만</span><span class="cls_051"> </span><span class="cls_052">연쇄사고가</span><span class="cls_051"> </span><span class="cls_052">적은</span><span class="cls_051"> </span><span class="cls_052">경우</span><span class="cls_051">, </span><span class="cls_052">또</span><span class="cls_051"> </span><span class="cls_052">반대로</span><span class="cls_051"> </span><span class="cls_052">연쇄사고지만</span><span class="cls_051"> </span><span class="cls_052">심각도가</span><span class="cls_051"> </span><span class="cls_052">낮은</span><span class="cls_051"> </span><span class="cls_052">사고가</span><span class="cls_051"> </span><span class="cls_052">충분히</span><span class="cls_051"> </span><span class="cls_052">많아서</span><span class="cls_051">, '</span><span class="cls_052">상관관계</span><span class="cls_051">'</span><span class="cls_052">로</span></div>
+<div style="position:absolute;left:27.02px;top:77.98px" class="cls_052"><span class="cls_052">설며되는</span><span class="cls_051"> </span><span class="cls_052">변수는</span><span class="cls_051"> </span><span class="cls_052">아니다</span><span class="cls_051">. (</span><span class="cls_052">필연적</span><span class="cls_051"> </span><span class="cls_052">인과관계가</span><span class="cls_051"> </span><span class="cls_052">아니다</span><span class="cls_051">)</span></div>
+<div style="position:absolute;left:27.02px;top:106.76px" class="cls_036"><span class="cls_036">2. </span><span class="cls_035">그러나</span><span class="cls_036"> </span><span class="cls_035">연쇄사고로</span><span class="cls_036"> </span><span class="cls_035">갈수록</span><span class="cls_036"> (</span><span class="cls_035">차수가</span><span class="cls_036"> </span><span class="cls_035">높아질수록</span><span class="cls_036">), </span><span class="cls_035">사고에서</span><span class="cls_036"> Severity</span><span class="cls_035">가</span><span class="cls_036"> </span><span class="cls_035">차지하는</span><span class="cls_036"> </span><span class="cls_035">비율이</span><span class="cls_036"> </span><span class="cls_035">달라진다</span><span class="cls_036">. 1</span><span class="cls_035">에</span><span class="cls_036"> </span><span class="cls_035">해당하는</span><span class="cls_036"> </span><span class="cls_035">사고들이</span></div>
+<div style="position:absolute;left:27.02px;top:121.20px" class="cls_052"><span class="cls_052">여전히</span><span class="cls_051"> </span><span class="cls_052">많이</span><span class="cls_051"> </span><span class="cls_052">발생하지만</span><span class="cls_051">, </span><span class="cls_052">그</span><span class="cls_051"> </span><span class="cls_052">안에서</span><span class="cls_051"> </span><span class="cls_052">비율이</span><span class="cls_051"> </span><span class="cls_052">달라진다고</span><span class="cls_051"> </span><span class="cls_052">볼수있다</span><span class="cls_051">.</span></div>
+<div style="position:absolute;left:27.02px;top:149.98px" class="cls_036"><span class="cls_036">3. </span><span class="cls_035">통념과는</span><span class="cls_036"> </span><span class="cls_035">다르게</span><span class="cls_036">, </span><span class="cls_035">사고의</span><span class="cls_036"> </span><span class="cls_035">차수가</span><span class="cls_036"> </span><span class="cls_035">높아질수록</span><span class="cls_036"> Severity</span><span class="cls_035">가</span><span class="cls_036"> </span><span class="cls_035">더</span><span class="cls_036"> </span><span class="cls_035">높은</span><span class="cls_036"> </span><span class="cls_035">사고가</span><span class="cls_036"> </span><span class="cls_035">차지하는</span><span class="cls_036"> </span><span class="cls_035">비율이</span><span class="cls_036"> </span><span class="cls_035">높고</span><span class="cls_036">, severity 1</span><span class="cls_035">이</span><span class="cls_036"> </span><span class="cls_035">차지하는</span></div>
+<div style="position:absolute;left:27.02px;top:164.42px" class="cls_052"><span class="cls_052">비율은</span><span class="cls_051"> </span><span class="cls_052">감소함은</span><span class="cls_051"> </span><span class="cls_052">알수있다</span><span class="cls_051">.</span></div>
+<div style="position:absolute;left:244.58px;top:227.81px" class="cls_081"><span class="cls_081">결론적으로</span><span class="cls_082">, Severity</span><span class="cls_081">가</span><span class="cls_082"> </span><span class="cls_081">높다고</span></div>
+<div style="position:absolute;left:157.44px;top:249.46px" class="cls_061"><span class="cls_061">연쇄사고가</span><span class="cls_062"> </span><span class="cls_061">많이</span><span class="cls_062"> </span><span class="cls_061">일어난다고</span><span class="cls_062"> </span><span class="cls_061">볼</span><span class="cls_062"> </span><span class="cls_061">수는</span><span class="cls_062"> </span><span class="cls_061">없다</span><span class="cls_062"> (Vice Versa)</span></div>
+<div style="position:absolute;left:253.70px;top:292.68px" class="cls_061"><span class="cls_061">그러나</span><span class="cls_062">, </span><span class="cls_061">연쇄적인</span><span class="cls_062"> </span><span class="cls_061">사고일수록</span></div>
+<div style="position:absolute;left:159.60px;top:314.26px" class="cls_082"><span class="cls_082">Severity </span><span class="cls_081">가</span><span class="cls_082"> </span><span class="cls_081">높은</span><span class="cls_082"> </span><span class="cls_081">사고의</span><span class="cls_082"> </span><span class="cls_081">비중이</span><span class="cls_082"> </span><span class="cls_081">증가한다고</span><span class="cls_082"> </span><span class="cls_081">볼</span><span class="cls_082"> </span><span class="cls_081">수</span><span class="cls_082"> </span><span class="cls_081">있다</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:22825px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background56.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">3. </span><span class="cls_059">연쇄사고</span><span class="cls_060"> </span><span class="cls_059">분포</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">네트워크</span><span class="cls_060"> - </span><span class="cls_059">한계점</span></div>
+<div style="position:absolute;left:21.34px;top:215.50px" class="cls_017"><span class="cls_017">1. </span><span class="cls_016">연쇄사고의</span><span class="cls_017"> </span><span class="cls_016">차수에</span><span class="cls_017"> </span><span class="cls_016">따른</span><span class="cls_017"> </span><span class="cls_016">분포의</span><span class="cls_017"> </span><span class="cls_016">편차가</span><span class="cls_017"> </span><span class="cls_016">매우</span><span class="cls_017"> </span><span class="cls_016">심하다</span><span class="cls_017">. (1</span><span class="cls_016">차</span><span class="cls_017">~3</span><span class="cls_016">차에</span><span class="cls_017"> </span><span class="cls_016">지나치게</span><span class="cls_017"> </span><span class="cls_016">많이</span><span class="cls_017"> </span><span class="cls_016">몰려있다</span><span class="cls_017">). </span><span class="cls_016">이는</span><span class="cls_017"> </span><span class="cls_016">현실적으로</span><span class="cls_017"> </span><span class="cls_016">타당한</span></div>
+<div style="position:absolute;left:21.34px;top:232.28px" class="cls_022"><span class="cls_022">결과이지만</span><span class="cls_021">, </span><span class="cls_022">연쇄사고의</span><span class="cls_021"> Severity</span><span class="cls_022">의</span><span class="cls_021"> </span><span class="cls_022">영향에</span><span class="cls_021"> </span><span class="cls_022">대한</span><span class="cls_021"> </span><span class="cls_022">결론에</span><span class="cls_021"> </span><span class="cls_022">근거를</span><span class="cls_021"> </span><span class="cls_022">약하게</span><span class="cls_021"> </span><span class="cls_022">하는</span><span class="cls_021"> </span><span class="cls_022">요소이다</span><span class="cls_021">.</span></div>
+<div style="position:absolute;left:21.34px;top:265.90px" class="cls_021"><span class="cls_021">2. </span><span class="cls_022">데이터</span><span class="cls_021"> </span><span class="cls_022">자체에서</span><span class="cls_021"> Severity</span><span class="cls_022">의</span><span class="cls_021"> </span><span class="cls_022">기준이</span><span class="cls_021"> </span><span class="cls_022">너무</span><span class="cls_021"> </span><span class="cls_022">광범위하며</span><span class="cls_021">, </span><span class="cls_022">기준이</span><span class="cls_021"> </span><span class="cls_022">모호하다</span><span class="cls_021">.</span></div>
+<div style="position:absolute;left:21.34px;top:299.54px" class="cls_017"><span class="cls_017">3. </span><span class="cls_016">데이터</span><span class="cls_017"> </span><span class="cls_016">내에서</span><span class="cls_017"> </span><span class="cls_016">사고가</span><span class="cls_017"> </span><span class="cls_016">영향을</span><span class="cls_017"> </span><span class="cls_016">준</span><span class="cls_017"> Distance</span><span class="cls_016">와</span><span class="cls_017"> </span><span class="cls_016">시간을</span><span class="cls_017"> </span><span class="cls_016">주었기</span><span class="cls_017"> </span><span class="cls_016">때문에</span><span class="cls_017"> </span><span class="cls_016">연쇄적</span><span class="cls_017"> </span><span class="cls_016">사고를</span><span class="cls_017"> </span><span class="cls_016">도출한</span><span class="cls_017"> </span><span class="cls_016">과정이</span><span class="cls_017"> </span><span class="cls_016">논리적으로는</span></div>
+<div style="position:absolute;left:21.34px;top:316.32px" class="cls_022"><span class="cls_022">타당하지만</span><span class="cls_021">, </span><span class="cls_022">실제로</span><span class="cls_021"> </span><span class="cls_022">사고에</span><span class="cls_021"> </span><span class="cls_022">영향을</span><span class="cls_021"> </span><span class="cls_022">주었을</span><span class="cls_021"> </span><span class="cls_022">수많은</span><span class="cls_021"> </span><span class="cls_022">기타변수와</span><span class="cls_021">, ‘</span><span class="cls_022">독립사건이었을</span><span class="cls_021"> </span><span class="cls_022">가능성</span><span class="cls_021">’ </span><span class="cls_022">이</span><span class="cls_021"> </span><span class="cls_022">반영되지</span><span class="cls_021"> </span><span class="cls_022">않았으며</span></div>
+<div style="position:absolute;left:21.34px;top:333.17px" class="cls_016"><span class="cls_016">데이터만으로는 유추가 불가하다</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:23240px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background57.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:190.30px;top:81.07px" class="cls_003"><span class="cls_003">&lt;1</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:437.38px;top:79.20px" class="cls_003"><span class="cls_003">&lt;2</span><span class="cls_004">차</span><span class="cls_003"> </span><span class="cls_004">이상의</span><span class="cls_003"> </span><span class="cls_004">사고</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:96.07px;top:318.22px" class="cls_051"><span class="cls_051">• </span><span class="cls_052">색깔</span><span class="cls_051">: </span><span class="cls_052">심각도</span></div>
+<div style="position:absolute;left:96.07px;top:339.84px" class="cls_051"><span class="cls_051">• </span><span class="cls_052">원 크기</span><span class="cls_051">: base</span><span class="cls_052">사고가 일으킨 사고 숫자</span><span class="cls_051">(</span><span class="cls_052">왼쪽</span><span class="cls_051">), </span><span class="cls_052">몇 차의 사고인가</span><span class="cls_051">(</span><span class="cls_052">오른쪽</span><span class="cls_051">)</span></div>
+<div style="position:absolute;left:96.07px;top:361.44px" class="cls_051"><span class="cls_051">• </span><span class="cls_052">결론</span><span class="cls_051">: </span><span class="cls_052">일부지역에</span><span class="cls_051"> 2</span><span class="cls_052">차사고가</span><span class="cls_051"> </span><span class="cls_052">많이</span><span class="cls_051"> </span><span class="cls_052">일어난다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:23655px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background58.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:27.02px;top:63.53px" class="cls_027"><span class="cls_027">&lt;</span><span class="cls_028">각</span><span class="cls_027"> </span><span class="cls_028">주별</span><span class="cls_027"> </span><span class="cls_028">사고</span><span class="cls_027"> </span><span class="cls_028">비율</span><span class="cls_027">(</span><span class="cls_028">전체</span><span class="cls_027"> </span><span class="cls_028">데이터</span><span class="cls_027"> vs </span><span class="cls_028">심각한</span><span class="cls_027"> </span><span class="cls_028">사고데이터</span><span class="cls_027">)></span></div>
+<div style="position:absolute;left:99.98px;top:323.90px" class="cls_051"><span class="cls_051">• </span><span class="cls_052">전체</span><span class="cls_051"> </span><span class="cls_052">사고</span><span class="cls_051"> </span><span class="cls_052">대비</span><span class="cls_051"> 2</span><span class="cls_052">차사고가</span><span class="cls_051"> </span><span class="cls_052">많이</span><span class="cls_051"> </span><span class="cls_052">일어나는</span><span class="cls_051"> </span><span class="cls_052">지역</span><span class="cls_051"> </span><span class="cls_052">선정</span><span class="cls_051">(</span><span class="cls_052">비율이</span><span class="cls_051"> 2</span><span class="cls_052">배</span><span class="cls_051"> </span><span class="cls_052">이상</span><span class="cls_051">)</span></div>
+<div style="position:absolute;left:99.98px;top:345.50px" class="cls_051"><span class="cls_051">• </span><span class="cls_052">어느정도</span><span class="cls_051"> </span><span class="cls_052">데이터</span><span class="cls_051"> </span><span class="cls_052">개수가</span><span class="cls_051"> </span><span class="cls_052">있는</span><span class="cls_051"> </span><span class="cls_052">지역</span><span class="cls_051"> </span><span class="cls_052">선정</span></div>
+<div style="position:absolute;left:99.98px;top:367.13px" class="cls_051"><span class="cls_051">•</span></div>
+<div style="position:absolute;left:113.42px;top:367.13px" class="cls_051"><span class="cls_051">[“IA”, “MI”, “NJ”]</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:24070px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background59.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:73.80px;top:45.77px" class="cls_003"><span class="cls_003">&lt;</span><span class="cls_004">기온</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:73.85px;top:208.13px" class="cls_011"><span class="cls_011">&lt;</span><span class="cls_010">윈드칠</span><span class="cls_011">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:24485px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background60.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:64.61px;top:46.54px" class="cls_003"><span class="cls_003">&lt;</span><span class="cls_004">강수량</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:64.61px;top:202.18px" class="cls_003"><span class="cls_003">&lt;</span><span class="cls_004">날씨</span><span class="cls_003"> </span><span class="cls_004">조건</span><span class="cls_003">></span></div>
+<div style="position:absolute;left:64.61px;top:377.33px" class="cls_052"><span class="cls_052">결론</span><span class="cls_051">: </span><span class="cls_052">눈</span><span class="cls_051">, </span><span class="cls_052">비</span><span class="cls_051">, </span><span class="cls_052">낮은</span><span class="cls_051"> </span><span class="cls_052">기온</span><span class="cls_051"> </span><span class="cls_052">요소가</span><span class="cls_051"> </span><span class="cls_052">사고에</span><span class="cls_051"> </span><span class="cls_052">영향을</span><span class="cls_051"> </span><span class="cls_052">많이</span><span class="cls_051"> </span><span class="cls_052">줌을</span><span class="cls_051"> </span><span class="cls_052">알</span><span class="cls_051"> </span><span class="cls_052">수</span><span class="cls_051"> </span><span class="cls_052">있다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:24900px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background61.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:149.66px;top:56.90px" class="cls_027"><span class="cls_027">&lt;</span><span class="cls_028">횡단보도의</span><span class="cls_027"> </span><span class="cls_028">유무별</span><span class="cls_027"> </span><span class="cls_028">사고비율</span><span class="cls_027">></span></div>
+<div style="position:absolute;left:149.66px;top:197.98px" class="cls_083"><span class="cls_083">&lt;Traffic signal</span><span class="cls_084">의</span><span class="cls_083"> </span><span class="cls_084">유무별</span><span class="cls_083"> </span><span class="cls_084">사고</span><span class="cls_083"> </span><span class="cls_084">비율</span><span class="cls_083">></span></div>
+<div style="position:absolute;left:149.66px;top:353.76px" class="cls_052"><span class="cls_052">이외에도</span><span class="cls_051">, </span><span class="cls_052">횡단보도</span><span class="cls_051">, traffic signal </span><span class="cls_052">여부가</span><span class="cls_051"> </span><span class="cls_052">사고에</span><span class="cls_051"> </span><span class="cls_052">큰</span><span class="cls_051"> </span><span class="cls_052">영향을</span><span class="cls_051"> </span><span class="cls_052">준다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:25315px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background62.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_072"><span class="cls_072">3. </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span></div>
+<div style="position:absolute;left:145.37px;top:50.66px" class="cls_027"><span class="cls_027">&lt;</span><span class="cls_028">요일별</span><span class="cls_027"> </span><span class="cls_028">사고</span><span class="cls_027"> </span><span class="cls_028">비율</span><span class="cls_027">></span></div>
+<div style="position:absolute;left:145.37px;top:192.22px" class="cls_027"><span class="cls_027">&lt;</span><span class="cls_028">시간별</span><span class="cls_027"> </span><span class="cls_028">사고</span><span class="cls_027"> </span><span class="cls_028">비율</span><span class="cls_027">></span></div>
+<div style="position:absolute;left:145.32px;top:343.94px" class="cls_050"><span class="cls_050">•</span><span class="cls_051"> </span><span class="cls_052">다른</span><span class="cls_051"> </span><span class="cls_052">때</span><span class="cls_051"> </span><span class="cls_052">보다</span><span class="cls_051"> </span><span class="cls_052">교통량이</span><span class="cls_051"> </span><span class="cls_052">많은</span><span class="cls_051"> </span><span class="cls_052">주말에</span><span class="cls_051"> severe</span><span class="cls_052">한</span><span class="cls_051"> </span><span class="cls_052">사고양이</span><span class="cls_051"> </span><span class="cls_052">늘었다</span><span class="cls_051">.</span></div>
+<div style="position:absolute;left:145.32px;top:365.57px" class="cls_050"><span class="cls_050">•</span><span class="cls_051"> </span><span class="cls_052">시간대는</span><span class="cls_051"> </span><span class="cls_052">크게</span><span class="cls_051"> </span><span class="cls_052">영향을</span><span class="cls_051"> </span><span class="cls_052">주지</span><span class="cls_051"> </span><span class="cls_052">않음을</span><span class="cls_051"> </span><span class="cls_052">알</span><span class="cls_051"> </span><span class="cls_052">수</span><span class="cls_051"> </span><span class="cls_052">있다</span><span class="cls_051">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:25730px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background63.jpg" width=720 height=405></div>
+<div style="position:absolute;left:27.02px;top:11.76px" class="cls_060"><span class="cls_060">3.</span><span class="cls_072"> </span><span class="cls_059">연쇄사고에</span><span class="cls_072"> </span><span class="cls_059">영향을</span><span class="cls_072"> </span><span class="cls_059">주는</span><span class="cls_072"> </span><span class="cls_059">요소</span><span class="cls_060"> - </span><span class="cls_059">결론</span><span class="cls_060"> </span><span class="cls_059">및</span><span class="cls_060"> </span><span class="cls_059">한계점</span></div>
+<div style="position:absolute;left:38.54px;top:234.34px" class="cls_030"><span class="cls_030">결론</span><span class="cls_029">: </span><span class="cls_030">심각한</span><span class="cls_029"> </span><span class="cls_030">연쇄사고에</span><span class="cls_029"> </span><span class="cls_030">가장</span><span class="cls_029"> </span><span class="cls_030">영향을</span><span class="cls_029"> </span><span class="cls_030">많이</span><span class="cls_029"> </span><span class="cls_030">주는</span><span class="cls_029"> </span><span class="cls_030">요소는</span><span class="cls_029"> </span><span class="cls_030">낮은</span><span class="cls_029"> </span><span class="cls_030">기온과</span><span class="cls_029"> </span><span class="cls_030">눈</span><span class="cls_029">, </span><span class="cls_030">비와</span><span class="cls_029"> </span><span class="cls_030">같은</span><span class="cls_029"> </span><span class="cls_030">환경적</span><span class="cls_029"> </span><span class="cls_030">요소이다</span><span class="cls_029">.</span></div>
+<div style="position:absolute;left:38.54px;top:291.96px" class="cls_030"><span class="cls_030">한계점</span><span class="cls_029">: </span><span class="cls_030">주어진</span><span class="cls_029"> </span><span class="cls_030">데이터에</span><span class="cls_029"> </span><span class="cls_030">있는</span><span class="cls_029"> </span><span class="cls_030">것</span><span class="cls_029"> </span><span class="cls_030">외에</span><span class="cls_029"> state</span><span class="cls_030">별</span><span class="cls_029"> </span><span class="cls_030">특징</span><span class="cls_029"> </span><span class="cls_030">데이터와</span><span class="cls_029"> </span><span class="cls_030">같은</span><span class="cls_029"> </span><span class="cls_030">다른</span><span class="cls_029"> </span><span class="cls_030">데이터를</span><span class="cls_029"> </span><span class="cls_030">살펴보지</span><span class="cls_029"> </span><span class="cls_030">못해서</span></div>
+<div style="position:absolute;left:38.54px;top:320.78px" class="cls_030"><span class="cls_030">심각한</span><span class="cls_029"> </span><span class="cls_030">사고가</span><span class="cls_029"> </span><span class="cls_030">많이</span><span class="cls_029"> </span><span class="cls_030">일어나는</span><span class="cls_029"> </span><span class="cls_030">다른</span><span class="cls_029"> </span><span class="cls_030">의미있는</span><span class="cls_029"> </span><span class="cls_030">요인을</span><span class="cls_029"> </span><span class="cls_030">발견하지</span><span class="cls_029"> </span><span class="cls_030">못했다</span><span class="cls_029">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:26145px;width:720px;height:405px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="09786e32-df80-11ea-8b25-0cc47a792c0a_id_09786e32-df80-11ea-8b25-0cc47a792c0a_files/background64.jpg" width=720 height=405></div>
+<div style="position:absolute;left:398.42px;top:79.85px" class="cls_087"><span class="cls_087">THANKS!</span></div>
+<div style="position:absolute;left:411.96px;top:323.38px" class="cls_085"><span class="cls_085">CREDITS</span><span class="cls_086">: This presentation template was created by </span><A HREF="http://bit.ly/2Tynxth">Slidesgo</A> </span><span class="cls_086">,</span></div>
+<div style="position:absolute;left:400.68px;top:337.06px" class="cls_086"><span class="cls_086">including icons by </span><A HREF="http://bit.ly/2TyoMsr">Flaticon</A><span class="cls_086">, and infographics & images by </span><A HREF="http://bit.ly/2TtBDfr">Freepik</A> </span></div>
+</div>
+
+</body>
+</html>
